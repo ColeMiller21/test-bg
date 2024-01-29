@@ -18,7 +18,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-primary">
       <h1 className="font-extrabold text-4xl">BG Test</h1>
-      <div className={`relative w-full ${safariClass}`}>
+      <div className={`relative w-full`}>
+        <div className="absolute w-full h-full bg-primary opacity-20"></div>
         <video
           className={"w-full lg:w-1/2 h-full object-contain"}
           preload="auto"
