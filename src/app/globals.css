@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Target Safari 7.1+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .safari-ios-bg-fix {
+      /* Adjust color, brightness, or contrast as needed */
+      background-color: #e8c00b; /* Example: adjusted color */
+      -webkit-filter: brightness(98%); /* Example: adjust brightness */
+    }
+  }
+}
